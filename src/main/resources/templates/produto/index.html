@@ -7,9 +7,13 @@
     <body>
         <div class="container">
 			<nav th:replace="layout :: menu">(menu)</nav>
+            
+            <a th:href="@{/produto/novo}" class="btn btn-primary">  Novo  </a>
+
             <table class="table">
                 <thead>
                     <tr>
+                        <th>Nome</th>
                         <th>Descrição</th>
                         <th>Preço</th>
                         <th>Data</th>
@@ -19,17 +23,17 @@
                 </thead>
                 <tbody>
                     <tr th:each="umproduto : ${listaProdutos}">
+                        <td th:text="${umproduto.nome}"></td>
                         <td th:text="${umproduto.descricao}"></td>
                         <td th:text="${umproduto.preco}"></td>
                         <td th:text="${umproduto.dataRegistro}"></td>
                         <td th:text="${umproduto.categoria}"></td>
-                        <!--<td><a th:href="@{'/produto/alterar/'+${umproduto.id}}" class="btn btn-primary">Alterar</a></td>-->
+                        <td><a th:href="@{'/produto/alterar/'+${umproduto.id}}" class="btn btn-primary">Alterar</a></td>
                     </tr>
                 </tbody>
-            </table>
-         
+            </table>    
 
         </div>
         <div th:include="layout :: footer" id="footer">(footer)</div>
     </body>
-</html>
+</html> 
