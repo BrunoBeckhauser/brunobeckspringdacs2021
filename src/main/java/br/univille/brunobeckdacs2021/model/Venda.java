@@ -31,28 +31,36 @@ public class Venda
     private List<ItemVenda> colItemVenda = new ArrayList<ItemVenda>();
     
     
-    public float getValortotal() {
+    public float getValortotal() 
+    {
         return valortotal;
     }
-    public void setValortotal(float valortotal) {
+    public void setValortotal(float valortotal) 
+    {
         this.valortotal = valortotal;
     }
-    public Date getData() {
+    public Date getData() 
+    {
         return data;
     }
-    public void setData(Date data) {
+    public void setData(Date data) 
+    {
         this.data = data;
     }
-    public String getCupom() {
+    public String getCupom() 
+    {
         return cupom;
     }
-    public void setCupom(String cupom) {
+    public void setCupom(String cupom) 
+    {
         this.cupom = cupom;
     }
-    public long getId() {
+    public long getId() 
+    {
         return id;
     }
-    public void setId(long id) {
+    public void setId(long id) 
+    {
         this.id = id;
     }    
 

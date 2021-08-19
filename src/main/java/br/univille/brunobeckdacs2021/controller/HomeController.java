@@ -24,7 +24,7 @@ public class HomeController {
 
         HashMap<String,String> dados = new HashMap<>();
         dados.put("tempo", sdf.format(dataAgora));
-        dados.put("nomeapp","App Java lindo!!!");
+        dados.put("nomeapp","BrunoBeck");
 
         return new ModelAndView("home/index", dados);
         //return new ModelAndView("home/index", "tempo", sdf.format(dataAgora));
