@@ -15,29 +15,40 @@ import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 public class Venda 
-{   
+{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    private float valortotal;
+    private float valorTotal;
     @Temporal(value = TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date data;
     @Column(length = 15)
     private String cupom;
-    @OneToMany(cascade = {CascadeType.REFRESH, CascadeType.MERGE})
+
+    @OneToMany(cascade = CascadeType.ALL,orphanRemoval=true)
     @JoinColumn(name = "venda_id")
     private List<ItemVenda> colItemVenda = new ArrayList<ItemVenda>();
     
-    
-    public float getValortotal() 
+    public long getId() 
     {
-        return valortotal;
+        return id;
     }
-    public void setValortotal(float valortotal) 
+    public void setId(long id) 
     {
-        this.valortotal = valortotal;
+        this.id = id;
+    }
+    public float getValorTotal() 
+    {
+        return valorTotal;
+    }
+    public void setValorTotal(float valorTotal) 
+    {
+        this.valorTotal = valorTotal;
     }
     public Date getData() 
     {
@@ -55,14 +66,13 @@ public class Venda
     {
         this.cupom = cupom;
     }
-    public long getId() 
+    public List<ItemVenda> getColItemVenda() 
     {
-        return id;
+        return colItemVenda;
     }
-    public void setId(long id) 
+    public void setColItemVenda(List<ItemVenda> colItemVenda) 
     {
-        this.id = id;
-    }    
+        this.colItemVenda = colItemVenda;
+    }
 
-    
 }
