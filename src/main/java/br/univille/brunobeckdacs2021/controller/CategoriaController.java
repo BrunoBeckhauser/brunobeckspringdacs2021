@@ -14,6 +14,15 @@ import org.springframework.web.servlet.ModelAndView;
 import br.univille.brunobeckdacs2021.model.Categoria;
 import br.univille.brunobeckdacs2021.service.CategoriaService;
 
+/***
+ * CategoriaController representa a camada controller da aplicação
+ * que deve ser responsável por receber as requisições HTTP, aplicar
+ * o mecanismo de rotas do SpringBoot, executar a lógica dos métodos 
+ * mapeados chamando as classes de serviço para realizar as ações
+ * necessárias e então repassar o resultado dos dados dentro de instâncias
+ * das classes model para a view que será retornada como resposta
+ * para o cliente.
+ */
 
 @Controller
 @RequestMapping("/categoria")

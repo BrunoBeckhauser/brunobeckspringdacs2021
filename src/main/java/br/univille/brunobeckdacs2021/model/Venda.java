@@ -18,8 +18,7 @@ import javax.persistence.TemporalType;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
-public class Venda 
-{
+public class Venda {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -34,45 +33,37 @@ public class Venda
     @JoinColumn(name = "venda_id")
     private List<ItemVenda> colItemVenda = new ArrayList<ItemVenda>();
     
-    public long getId() 
-    {
+    public long getId() {
         return id;
     }
-    public void setId(long id) 
-    {
+    public void setId(long id) {
         this.id = id;
     }
-    public float getValorTotal() 
-    {
+    public float getValorTotal() {
         return valorTotal;
     }
-    public void setValorTotal(float valorTotal) 
-    {
+    public void setValorTotal(float valorTotal) {
         this.valorTotal = valorTotal;
     }
-    public Date getData() 
-    {
+    public Date getData() {
         return data;
     }
-    public void setData(Date data) 
-    {
+    public void setData(Date data) {
         this.data = data;
     }
-    public String getCupom() 
-    {
+    public String getCupom() {
         return cupom;
     }
-    public void setCupom(String cupom) 
-    {
+    public void setCupom(String cupom) {
         this.cupom = cupom;
     }
-    public List<ItemVenda> getColItemVenda() 
-    {
+    public List<ItemVenda> getColItemVenda() {
         return colItemVenda;
     }
-    public void setColItemVenda(List<ItemVenda> colItemVenda) 
-    {
+    public void setColItemVenda(List<ItemVenda> colItemVenda) {
         this.colItemVenda = colItemVenda;
     }
 
+        
+    
 }

@@ -1,5 +1,7 @@
 package br.univille.brunobeckdacs2021.controller;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -26,9 +28,30 @@ public class ProdutoController {
     @Autowired
     private CategoriaService categoriaService;
     
+    /* 
+    Date aniversario = new Date();
+
+    Atributo - Variavel
+    public/private tipo nome;
+    Método - Função
+    public tipo nome (parametros) { corpo } */
+
     @GetMapping
     public ModelAndView index(){
+        /*Produto prod1 = new Produto();
+        prod1.setDescricao("Produto legal 1");
+        prod1.setDataRegistro(new Date());
+        prod1.setPreco(2000);
+
+        Produto prod2 = new Produto();
+        prod2.setDescricao("Produto legal 2");
+        prod2.setDataRegistro(new Date());
+        prod2.setPreco(5000);*/
+
         List<Produto> listaProdutos = service.getAllProdutos();
+
+        /*listaProdutos.add(prod1);
+        listaProdutos.add(prod2);*/
 
         return new ModelAndView("produto/index","listaProdutos",listaProdutos);
     }
