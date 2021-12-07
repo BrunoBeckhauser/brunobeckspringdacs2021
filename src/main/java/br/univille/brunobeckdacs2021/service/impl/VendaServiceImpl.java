@@ -12,7 +12,6 @@ import br.univille.brunobeckdacs2021.service.VendaService;
 @Service
 public class VendaServiceImpl implements VendaService 
 {
-
     @Autowired
     private VendaRepository repository;
 

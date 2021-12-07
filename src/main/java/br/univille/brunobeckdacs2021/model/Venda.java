@@ -63,7 +63,6 @@ public class Venda {
     public void setColItemVenda(List<ItemVenda> colItemVenda) {
         this.colItemVenda = colItemVenda;
     }
-
         
     
 }

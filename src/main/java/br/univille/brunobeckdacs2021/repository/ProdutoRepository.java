@@ -8,5 +8,5 @@ import br.univille.brunobeckdacs2021.model.Produto;
 @Repository
 public interface ProdutoRepository extends JpaRepository <Produto, Long>
 {
-    
+
 }

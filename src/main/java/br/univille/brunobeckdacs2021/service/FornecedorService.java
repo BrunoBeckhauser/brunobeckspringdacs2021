@@ -7,7 +7,6 @@ import br.univille.brunobeckdacs2021.model.Fornecedor;
 @Service
 public interface FornecedorService 
 {
-
     public List<Fornecedor> getAllFornecedores();
 
     public Fornecedor save(Fornecedor fornecedor);

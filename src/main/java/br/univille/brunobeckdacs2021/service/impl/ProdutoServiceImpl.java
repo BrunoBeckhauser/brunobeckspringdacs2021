@@ -18,7 +18,8 @@ import br.univille.brunobeckdacs2021.service.ProdutoService;
 import br.univille.brunobeckdacs2021.repository.ProdutoRepository;
 
 @Service
-public class ProdutoServiceImpl implements ProdutoService{
+public class ProdutoServiceImpl implements ProdutoService
+{
 
     @Autowired
     private ProdutoRepository repository;

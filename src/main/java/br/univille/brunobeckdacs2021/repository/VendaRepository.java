@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import br.univille.brunobeckdacs2021.model.Venda;
 
 @Repository
-public interface VendaRepository extends JpaRepository<Venda,Long>{
+public interface VendaRepository extends JpaRepository<Venda,Long>
+{
     
 }

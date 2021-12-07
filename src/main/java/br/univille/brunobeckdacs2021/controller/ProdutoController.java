@@ -20,6 +20,7 @@ import br.univille.brunobeckdacs2021.service.ProdutoService;
 @RequestMapping("/produto")
 public class ProdutoController {
 
+
     @Autowired
     private ProdutoService service;
 

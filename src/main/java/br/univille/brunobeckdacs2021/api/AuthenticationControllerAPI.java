@@ -27,5 +27,6 @@ public class AuthenticationControllerAPI {
         UserDetails userDetails = serviceMyUserDetail.loadUserByUsername(usuarioValido.getUsuario());
         String token = serviceJWT.generateToken(userDetails);
         return ResponseEntity.ok(token);
+        
     }
 }

@@ -12,7 +12,6 @@ import br.univille.brunobeckdacs2021.service.CategoriaService;
 @Service
 public class CategoriaServiceImpl implements CategoriaService 
 {
-    
     @Autowired
     private CategoriaRepository repository;
     

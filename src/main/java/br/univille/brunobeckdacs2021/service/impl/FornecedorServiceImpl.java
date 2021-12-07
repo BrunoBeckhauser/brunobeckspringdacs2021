@@ -12,6 +12,7 @@ import br.univille.brunobeckdacs2021.service.FornecedorService;
 @Service
 public class FornecedorServiceImpl implements FornecedorService{
     
+    
     @Autowired
     private FornecedorRepository repository;
 

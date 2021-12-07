@@ -8,5 +8,5 @@ import br.univille.brunobeckdacs2021.model.Fornecedor;
 @Repository
 public interface FornecedorRepository extends JpaRepository <Fornecedor, Long>
 {
-    
+
 }

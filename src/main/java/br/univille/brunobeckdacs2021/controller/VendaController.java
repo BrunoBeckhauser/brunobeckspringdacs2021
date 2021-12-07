@@ -23,6 +23,7 @@ import br.univille.brunobeckdacs2021.service.VendaService;
 @RequestMapping("/venda")
 public class VendaController {
     
+    
     @Autowired
     private VendaService service;
     @Autowired

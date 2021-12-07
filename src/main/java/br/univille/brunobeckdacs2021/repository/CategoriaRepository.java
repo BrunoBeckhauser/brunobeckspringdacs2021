@@ -6,6 +6,7 @@ import br.univille.brunobeckdacs2021.model.Categoria;
 
 
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria,Long>{
+public interface CategoriaRepository extends JpaRepository<Categoria,Long>
+{
     
 }

@@ -17,6 +17,7 @@ import br.univille.brunobeckdacs2021.model.Produto;
 import br.univille.brunobeckdacs2021.service.ProdutoService;
 
 
+
 @RestController
 @RequestMapping("/api/v1/produtos")
 public class ProdutoControllerAPI {
