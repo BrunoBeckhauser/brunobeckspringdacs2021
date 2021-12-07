@@ -6,8 +6,6 @@ import br.univille.brunobeckdacs2021.model.Usuario;
 
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
-    /*SELECT * FROM Usuario where Usuario.usuario = "zezinho" */
     Usuario findByUsuario(String usuario);
-    /*Select * from usuario where usuario.usuario = "zezinho" and usuario.senha = "1234" */
     Usuario findByUsuarioAndSenha(String usuario,String senha);
 }
